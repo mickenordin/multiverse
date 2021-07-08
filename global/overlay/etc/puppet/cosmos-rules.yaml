@@ -1,3 +1,10 @@
 # Note that the matching is done with re.match()
+'micke.test.se':
+   sunet::server:
+      fail2ban: true
+      unattended_upgrades: true
+      disable_ipv6_privacy: true
+      disable_all_local_users: true
+      ssh_allow_from_anywhere: true
 '^ns[0-9]?.mnt.se$':
    nameserver:

@@ -17,8 +17,7 @@ if ! test -f $stamp -a -f /usr/bin/puppet; then
     fi
     dpkg -i $puppetdeb
     apt-get update
-    apt-get -y install puppet-common
-
+    apt-get -y install puppet-common || apt-get -y install puppet
     mkdir -p `dirname $stamp`
     touch $stamp
 fi
